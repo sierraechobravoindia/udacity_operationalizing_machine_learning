@@ -3,7 +3,7 @@
 This repository contains artefacts and documentation for the 2nd project in the udacity Machine Learning Engineer with Azure Nanodegree.
 
 ## Architectural Diagram
-![Basic Architecture for Azure AutoML](/images/Architecture.pdf)
+![Basic Architecture for Azure AutoML](/images/architecture.png)
 The diagram shows the basic architecture of the Azure Auto ML. The required ingredients to run an AutoML step are a dataset, an experiment and compute. The AutoML step then produces a "best" model under the definded boundary conditions (like metric, task, runtime contraints, ...). This model can then be registered and deployed. A deployed model creates an API documentation via Swagger and exposes a URL for scoring/inference.
 
 ## Key Steps
@@ -13,15 +13,13 @@ This section describes the major steps necessary to first train a model with Azu
 ### Register a dataset
 
 The first step is to create a dataset, this makes it convenient to ingest data in the Azure ML Studio. The screenshot shows the Bank Marketing Dataset used in this project.
-![Create a Dataset](/images/Dataset.png)
+![Create a Dataset](/images/dataset.png)
 More background information on the dataset used can be found in the UCI Machine Learning Repository: [Bank Marketing Dataset](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing)
 
 ### Create a compute resource
 
-To run experiments/jobs like AutoML a compute resource is needed. Here we create a small compute cluster to run the AutoML step on.
+To run experiments/jobs like AutoML a compute resource is needed. Here we created a small compute cluster to run the AutoML step on.
 
-The screenshot shows the compute cluster created for and used in this project.
-![Create a compute cluster](/images/computecluster.png)
 
 ### Create the AutoML Run
 Azure AutoML provides an an easy to use fully automatic ML-step including concurrent model selection, hyperparameter tuning and model comparison given a dataset, a ML task, a target metric some other boundary conditions and constraints.
