@@ -76,4 +76,4 @@ No effort was placed on model performance as the project focuses on the engineer
 Another topic for improvement could be the pipeline automation. The pipeline does not include the model deployment step only the AutoML step. In a production setting, it might be a good idea to include the deployment into the pipeline to fully automate periodic retraining of the model.
 
 ## Screen Recording
-The required screencast with a quick tour of the project in the Azure UI can be found [here](http://youtube.com/alsjdhfklasjhdfl).
+The required screencast with a quick tour of the project in the Azure UI can be found [here](https://youtu.be/gmsfoQ8Fjjk).
